@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(90deg, #6200FF, #0778FF);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app {
+  background-color: #fff;
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #007BFF;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+/* Input Form Styles */
+.input-form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List Styles */
+.tasks-status {
+  text-align: left;
+}
+
+.taskno {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.task-count{
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button#copy-btn,
+button#edit-btn {
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 15px;
+}
+
+button#delete-btn {
+  background-color: #E74C3C;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 15px;
+}
+
+button#copy-btn:hover,
+button#edit-btn:hover,
+button#delete-btn:hover {
+  background-color: #C0392B;
+}
+
+/* Media Query for Phone View */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: 70%;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  .list li {
+    margin: 10px 0;
+  }
+
+  button#copy-btn,
+  button#edit-btn,
+  button#delete-btn {
+    margin: 10px 0;
+  }
+}
