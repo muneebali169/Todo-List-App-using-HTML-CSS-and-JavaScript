@@ -23,4 +23,4 @@ Feel free to use, modify, and distribute this To-Do List App under the terms of 
 Muneeb Ali Shahzad
 
 #### Resources used:
-[www.openai.com](ChatGPT): The help is taken from ChatGPT, a product of OpenAI.
+[ChatGPT](www.openai.com): The help is taken from ChatGPT, a product of OpenAI.
